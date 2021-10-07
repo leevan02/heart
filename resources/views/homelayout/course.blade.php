@@ -34,8 +34,14 @@
                    <form class="" method="post" action="{{ url('/save') }}">
                      @csrf
                     <input type="hidden" name="course_id" value="{{ $course->id }}">
-                     <li class="advisor"><a href="{{ url('/save') }}" onclick="event.preventDefault();
-                        this.closest('form').submit();">save</a></li>
+
+                     <li class="advisor">
+                       <a href="{{ url('/save') }}" onclick="event.preventDefault();
+                        this.closest('form').submit();">
+                         save
+                      </a>
+                        
+                    </li>
 
                    </form>
                </ul>
