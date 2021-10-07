@@ -11,7 +11,22 @@
       margin-left:10px;
 
     }
-   
+    
+
+.box {
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;}
+ 
+   .image{
+    width: 10px;
+        height: 10px;
+   }
 
 
 
@@ -25,88 +40,8 @@
         <!-- partial:partials/_navbar.html -->
        @include('layouts.adminNav')
 
-     <div style="position:relative;  right:-100px; width:990px">
-              <form action="{{ url('/uploadcourse') }}" method="POST" enctype="multipart/form-data" style="width:600px">
-                 @csrf
-                  <div class="form-row">
-                        <div class="form-group col-sm-9">
-                          <label for="title" class="col-sm-2 col-form-label" name="title">Titile</label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="title" name="title" placeholder="Enter A Title Here ">
-                            </div>
-                      </div>
-
-                      <div class="form-group col-sm-9">
-                          <label for="description" class="col-sm-2 col-form-label">Description</label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" name="description"id="description" placeholder="Enter A Descriptiion Here">
-                            </div>
-                      </div>
-
-
-
-                      <div class="form-group row">
-                          <label for="teacher" class="col-sm-2 col-form-label" name="teacher">Teacher</label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="teacher" name="teacher" placeholder="Enter The Teacher Name ">
-                            </div>
-                      </div>
-
-                      <div class="form-group row">
-                        <label for="certiDegree" class="col-sm-2 col-form-label">certiDegree</label>
-                          <div class="col-sm-10">
-                            <input type="text" class="form-control" name="certiDegree"id="certiDegree" placeholder="Enter A certiDegree Here">
-                          </div>
-                      </div>
-
-                      <div class="form-group row">
-                        <label for="schedule	" class="col-sm-2 col-form-label">schedule	</label>
-                          <div class="col-sm-10">
-                            <input type="text" class="form-control" name="schedule"id="schedule	" placeholder="Enter A schedule	 Here">
-                          </div>
-                      </div>
-
-
-                      <div class="form-group row">
-                        <label for="price" class="col-sm-2 col-form-label">Price	</label>
-                          <div class="col-sm-10">
-                            <input type="text" class="form-control" name="schedule"id="price" placeholder="Enter A Price Here">
-                          </div>
-                      </div>
-
-                      <div class="dropdown show  " style="margin-top:78px;">
-                        <select class="form-select form-select-lg mb-3" name="status" aria-label=".form-select-lg example">
-                          <option selected value="">status</option>
-                          <option  value="active">active</option>
-                          <option  value="pending">pending</option>
-                          <option  value="available">available</option>
-                        </select>
-                      </div>
-
-
-                      <br> <br><br> <br>
-
-
-                      <div class="custom-file">
-
-                        <input type="file" class="custom-file-input" id="customFile" name="image"  required >
-                        <label class="custom-file-label" for="customFile">Choose image file</label>
-                      </div>
-
-                      <br> <br><br> <br>
-
-                      <div class="form-group row">
-                        <div class="col-sm-10">
-                          <button type="submit" class="btn btn-primary">Upload</button>
-                        </div>
-                      </div>
-                      
-                    
-                  </div>
-
-
-
-              </form>
+     <div style="position:relative;  right:-70px; " >
+             
 
       
 
@@ -116,9 +51,21 @@
 
        
       
-              <br><br><br><br><br><br>
-            <div style="  ">
-                <table class="table">
+              
+            <div  class="box" >
+                <table class="table" style="width:1500px">
+
+                  <div>
+                    @if (session()->has('message'))
+                    <div class="alret alert-success" id="alert">
+                
+                      {{ session()->get('message') }}
+                    </div>
+                      
+                    @endif
+                
+                
+                  </div>
                     <thead class="thead-dark">
                       <tr>
                         <th scope="col">Teacher</th>
@@ -147,7 +94,7 @@
                         <td>${{ $course->price }}</td>
                         <td>{{ $course->certiDegree }}</td>
                         <td>{{ $course->schedule }}</td>
-                        <td ><img src="/courseimage/{{ $course->image }}" alt=""></td>
+                        <td ><img src="/courseimage/{{ $course->image }}" alt="" class="image"/></td>
                         <td>{{ $course->status }}</td>
                               {{-- @foreach ($user as $course1) --}}
                         <td><a href="{{ url('/editcourse',$course->id) }}">Edit</a><br><br>

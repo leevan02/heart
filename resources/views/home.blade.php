@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.css" integrity="sha512-f8gN/IhfI+0E9Fc/LKtjVq4ywfhYAVeMGKsECzDUHcFJ5teVwvKTqizm+5a84FINhfrgdvjX8hEJbem2io1iTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <title>HeartOnline</title>
@@ -102,15 +103,15 @@ https://templatemo.com/tm-557-grad-school
       <div class="row">
         <div class="col-md-12">
           <div class="section-heading">
-            <h2>Why choose Grad School?</h2>
+            <h2 style="">Why choose HeartOnline?</h2>
           </div>
         </div>
         <div class="col-md-12">
           <div id='tabs'>
             <ul>
               <li><a href='#tabs-1'>Best Education</a></li>
-              <li><a href='#tabs-2'>Top Management</a></li>
-              <li><a href='#tabs-3'>Quality Meeting</a></li>
+              <li><a href='#tabs-2'>Online Courses</a></li>
+              <li><a href='#tabs-3'>Creti/Degree</a></li>
             </ul>
             <section class='tabs-content'>
               <article id='tabs-1'>
@@ -120,7 +121,7 @@ https://templatemo.com/tm-557-grad-school
                   </div>
                   <div class="col-md-6">
                     <h4>Best Education</h4>
-                    <p>Grad School is free educational HTML template with Bootstrap 4.5.2 CSS layout. Feel free to use it for educational or commercial purposes. You may want to make <a href="https://paypal.me/templatemo" target="_parent" rel="sponsored">a little donation</a> to TemplateMo. Please tell your friends about us. Thank you.</p>
+                    <p>HeartOnline is HKBkb   hbkhii sasd ewkn sjannosn  njsonwen wneinononw  onsnonwe,nusuohowe dsjnnueudnin jndne. dnoneownd oweno iewnneonen nn nnein 3ond eo djd eojdin djnd .</p>
                   </div>
                 </div>
               </article>
@@ -130,9 +131,9 @@ https://templatemo.com/tm-557-grad-school
                     <img src="assets/images/choose-us-image-02.png" alt="">
                   </div>
                   <div class="col-md-6">
-                    <h4>Top Level</h4>
-                    <p>You can modify this HTML layout by editing contents and adding more pages as you needed. Since this template has options to add dropdown menus, you can put many HTML pages.</p> 
-                    <p>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
+                    <h4>Online Courses</h4>
+                    <p>menus, you can ewkn sjannosn  njsonwen wneinononw  onsnonwe,nusuohowe dsjnnueudnin jndne. dnoneownd oweno iewnneonen nn nnein 3ond eo djd eojdin djnd ..</p> 
+                    <p>ewkn sjannosn  njsonwen wneinononw  onsnonwe,nusuohowe dsjnnueudnin jndne. dnoneownd oweno iewnneonen nn nnein 3ond eo djd eojdin djnd ..</p>
                   </div>
                 </div>
               </article>
@@ -142,8 +143,8 @@ https://templatemo.com/tm-557-grad-school
                     <img src="assets/images/choose-us-image-03.png" alt="">
                   </div>
                   <div class="col-md-6">
-                    <h4>Quality Meeting</h4>
-                    <p>You are NOT allowed to redistribute this template ZIP file on any template collection website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. For more information, you shall <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact TemplateMo</a> now.</p>
+                    <h4>Creti/Degree</h4>
+                    <p>ewkn sjannosn  njsonwen wneinononw  onsnonwe,nusuohowe dsjnnueudnin jndne. dnoneownd oweno iewnneonen nn nnein 3ond eo djd eoa specific theme for any kind of CMS platform such as WordPress. For more information, you s now.</p>
                   </div>
                 </div>
               </article>
@@ -167,19 +168,19 @@ https://templatemo.com/tm-557-grad-school
         <div class="col-md-6 align-self-center">
           <div class="left-content">
             <span>our presentation is for you</span>
-            <h4>Watch the video to learn more <em>about Grad School</em></h4>
-            <p>You are NOT allowed to redistribute this template ZIP file on any template collection website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. You may <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact TemplateMo</a> for details.
+            <h4>Watch the video to learn more about Heart<em>Online</em></h4>
+            <p>jdsnfljn ldnfclj.dn cljdn vlkdl vkd dkn ckd cdmck l ljdncd vd ld jdncidnvl mdvlk inlks cd vjksdv d cdvljd 
             <br><br>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
-            <div class="main-button"><a rel="nofollow" href="https://fb.com/templatemo" target="_parent">External URL</a></div>
           </div>
         </div>
         <div class="col-md-6">
           <article class="video-item">
             <div class="video-caption">
-              <h4>Power HTML Template</h4>
+              <h4>A Little About Coding</h4>
             </div>
             <figure>
-              <a href="https://www.youtube.com/watch?v=r9LtOG6pNUw" class="play"><img src="assets/images/main-thumb.png"></a>
+              
+              <a href="https://youtu.be/paKGQl0Hun0?list=TLPQMDQxMDIwMjGileJAYk5M2w" class="play"><img src="assets/images/main-thumb.png"></a>
             </figure>
           </article>
         </div>
@@ -192,7 +193,7 @@ https://templatemo.com/tm-557-grad-school
       <div class="row">
         <div class="col-md-12">
           <div class="section-heading">
-            <h2>Let’s Keep In Touch</h2>
+            <h2>Tell us your concern</h2>
           </div>
         </div>
         <div class="col-md-6">
@@ -201,7 +202,7 @@ https://templatemo.com/tm-557-grad-school
                 	
                     Please visit https://templatemo.com/contact page -->
                     
-          <form id="contact" action="" method="post">
+          <form id="contact" action="{{ url('send_contact') }}" method="post">
             <div class="row">
               <div class="col-md-6">
                   <fieldset>
@@ -213,9 +214,19 @@ https://templatemo.com/tm-557-grad-school
                     <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
                   </fieldset>
                 </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="phone_number" type="text" class="form-control" id="phone_number" placeholder="Your Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="subject" type="text" class="form-control" id="subject" placeholder="" required="">
+                  </fieldset>
+                </div>
               <div class="col-md-12">
                 <fieldset>
-                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                  <textarea name="content" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
                 </fieldset>
               </div>
               <div class="col-md-12">
@@ -250,6 +261,8 @@ https://templatemo.com/tm-557-grad-school
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
   @include('css-js.userjs')
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js" integrity="sha512-MqEDqB7me8klOYxXXQlB4LaNf9V9S0+sG1i8LtPOYmHqICuEZ9ZLbyV3qIfADg2UJcLyCm4fawNiFvnYbcBJ1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  @include('sweetalert::alert')
 
 </body>
 </html>

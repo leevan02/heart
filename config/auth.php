@@ -39,7 +39,12 @@ return [
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
+
+
         ],
+                //just added here at 27/9/21 -12:08pm
+
+      
     ],
 
     /*
@@ -65,10 +70,7 @@ return [
             'model' => App\Models\User::class,
         ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+      
     ],
 
     /*
@@ -93,6 +95,9 @@ return [
             'expire' => 60,
             'throttle' => 60,
         ],
+
+     
+
     ],
 
     /*

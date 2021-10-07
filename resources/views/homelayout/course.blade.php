@@ -23,13 +23,21 @@
             </a>
             <div class="text p-4">
                 <h3><a href="{{ url('/course',$course->id) }}">{{ $course->description }}</a></h3>
-                <p class="advisor">Advisor <span>{{ $course->teacher }}</span></p>
+                <p class="">Advisor <span>{{ $course->teacher }}</span></p>
                 <p class="advisor">certi <span>{{ $course->certiDegree }}</span></p>
                 <ul class="d-flex justify-content-between">
                    <li><span class="flaticon-shower"></span>{{ $course->schedule }}</li>
                    <li><span class="flaticon-shower"></span>{{ $course->status }}</li>
 
+
                    <li class="price">${{ $course->price }}</li>
+                   <form class="" method="post" action="{{ url('/save') }}">
+                     @csrf
+                    <input type="hidden" name="course_id" value="{{ $course->id }}">
+                     <li class="advisor"><a href="{{ url('/save') }}" onclick="event.preventDefault();
+                        this.closest('form').submit();">save</a></li>
+
+                   </form>
                </ul>
            </div>
        </div>

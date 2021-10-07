@@ -22,10 +22,6 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();
-            $table->string('stripe_id')->nullable()->collation('utf8mb4_bin');
-            $table->string('card_brand')->nullable();
-            $table->string('card_last_four', 4)->nullable();
-            $table->timestamp('trial_ends_at')->nullable();
             $table->timestamps();
         });
     }

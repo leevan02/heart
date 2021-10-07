@@ -1,0 +1,169 @@
+body{
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    font-family: 'Roboto', sans-serif;
+    padding-top: 85px;
+  }
+
+    /* PROFILE CSS */
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+
+
+
+
+
+  /* PROFILE UPLOAD CSS */
+
+
+  
+#imageUpload
+{
+    display: none;
+}
+
+#profileImage
+{
+    cursor: pointer;
+}
+
+#profile-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#profile-container img {
+    width: 150px;
+    height: 150px;
+}
+
+
+/* PAYMENT CSS */
+
+.wrapper {
+    background-color: #f4f2f7;
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 15px 20px;
+    border-radius: 10px
+}
+
+h4 {
+    font-weight: 800;
+    color: #888
+}
+
+label {
+    font-weight: 700;
+    color: #888;
+    font-size: 12px
+}
+
+.card-no {
+    border: none;
+    outline: none;
+    width: 90%;
+    padding-left: 8px
+}
+
+.form-control {
+    outline: none;
+    border: none;
+    box-shadow: none
+}
+
+.card-number {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 8px 2px
+}
+
+a {
+    font-size: 12px;
+    font-weight: 900;
+    margin-left: 30%
+}
+
+a {
+    text-decoration: none
+}
+
+.form-inline label {
+    font-size: 1rem
+}
+
+.focused {
+    border: 2px solid #9ab3f5
+}
+
+#form-footer a {
+    margin: 0
+}
+
+#form-footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #777
+}
+
+@media(max-width:395px) {
+    .form-inline label {
+        font-size: 12px
+    }
+
+    #form-footer p {
+        font-size: 11px
+    }
+
+    .card-no {
+        width: 85%
+    }
+}

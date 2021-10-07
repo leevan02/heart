@@ -38,9 +38,9 @@
           <div class="right-content">
             <div class="top-content ">
               
-              <h6>Register your free account and <em>get immediate</em> access to online courses</h6>
+              <h6>Contact us <em>about your</em>concerns</h6>
             </div>
-            <form id="contact" action="" method="get">
+            <form id="contact" action="#" method="post">
                 @csrf
               <div class="row">
                 <div class="col-md-12">
@@ -55,7 +55,18 @@
                 </div>
                 <div class="col-md-12">
                   <fieldset>
-                    <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Your Phone Number" required="">
+                    <input name="phone_number" type="text" class="form-control" id="phone_number" placeholder="Your Phone Number" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="subject" type="text" class="form-control" id="subject" placeholder="" required="">
+                  </fieldset>
+                </div>
+
+                <div class="col-md-12">
+                  <fieldset>
+                    <textarea name="content" class="form-control" id="content" placeholder="what are your concerns?"></textarea>
                   </fieldset>
                 </div>
                 <div class="col-md-12">

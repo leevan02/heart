@@ -1,14 +1,14 @@
 <header class="main-header clearfix" role="header">
     <div class="logo">
-      <a href="#"><em>Heart</em>Online</a>
+      <a href="{{ url('/') }}"><em>Heart</em>Online</a>
     </div>
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
     <nav id="menu" class="main-nav" role="navigation">
       
      <div class="navbar-collapse " >
           <ul class="main-menu">
-            <li><a href="#section1">Home</a></li>
-            <li class="has-sub-menu"><a href="#section2">About Us</a>
+            <li><a href="{{ url('/') }}">Home</a></li>
+            <li class="has-sub-menu"><a href="#">About Us</a>
               <ul class="sub-menu">
                 <li><a href="#section2">Who we are?</a></li>
                 <li><a href="#section3">What we do?</a></li>
@@ -42,12 +42,18 @@
                              
                                 <li><a href="{{ url('AdminHome') }}">Dashboard</a></li>
                                 @else
-                                <li><a href="">My Cousre</a></li>
+                                <li><a href="{{  url('my_course',Auth::user()->id) }}">My Cousre</a></li>
+                                       
 
-
+                              
+                         
+                                
+                                  <li><a href="{{ url('showsave') }}">Save ({{ $count }})</a></li>
+                                
+                                 
                               @endif
 
-
+                                
                           <li> <form method="POST" action="{{ route('logout') }}">
                             @csrf
                             <a href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -66,6 +72,7 @@
                   @endauth
               </div>
               @endif
+
             </ul>
           </ul>
         </div>

@@ -2,37 +2,93 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 
-use Illuminate\Support\Facades\Auth;
 
-use App\models\user;
+use App\Models\User;
+
+use App\Models\Saved;
 
 use App\models\Course;
+use App\Mail\ContactMail;
+use Illuminate\Http\Request;
+use App\Mail\ContactMailable;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
-    function index() 
-    {  $datas=Course::all(); 
+  
+
+    
+   public function index() 
+    { 
+        
+        $user_id=Auth::id();
+        $count=Saved::where('user_id',$user_id)->count();
+         $datas=Course::all(); 
         $user=user::all();
-       return view('home',compact('datas','user'));
+       return view('home',compact('datas','user','count'));
 
     }
 
-    function CheckRoute() 
+   public function CheckRoute() 
     {
         $datas=Course::all();
         $user=user::all();
 
-        $usertype=Auth::user()->usertype;
+         $usertype=Auth::User()->usertype;
 
         if($usertype=='1')
            {
-               return view('admin.AdminHome');
+               return view('admin.adminHome');
            }
             else
              {
-                 return view('home',compact('datas','user'));
+                $user_id=Auth::id();
+                $count=Saved::where('user_id',$user_id)->count();
+                 return view('home',compact('datas','user','count'));
              }
     }
+
+
+
+
+   
+
+    public function send_contact(Request $request)
+    {
+        $request->validate([
+          'email' => 'required|email',
+          'subject' => 'required',
+          'phone_number' => 'required',
+
+          'name' => 'required',
+          'content' => 'required',
+        ]);
+
+        $contact = [
+          'subject' => $request->subject,
+          'name' => $request->name,
+          'phone_number' => $request->phone_number,
+
+          'email' => $request->email,
+          'content' => $request->content
+        ];
+
+        // Mail::send('emails.contact', $data, function($contact_data) use ($data) {
+        //     $contact_data->to($data['email'])
+        //     ->subject($data['subject']);
+        //   });
+        Mail::to('testproject@gmail.com')->send(new ContactMailable($contact));
+
+        return back()->with('success', 'Concern sent');;
+    }
+
+
+
+   
+
+
+
+
 }

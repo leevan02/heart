@@ -10,7 +10,6 @@ class AddTwoFactorColumnsToUsersTable extends Migration
      * Run the migrations.
      *
      * @return void
-     * 
      */
     public function up()
     {
@@ -22,8 +21,6 @@ class AddTwoFactorColumnsToUsersTable extends Migration
             $table->text('two_factor_recovery_codes')
                     ->after('two_factor_secret')
                     ->nullable();
-
-           
         });
     }
 

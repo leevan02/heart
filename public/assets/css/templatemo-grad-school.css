@@ -221,7 +221,7 @@ a.menu-link { display: none; }
     transition: all 0.5s;
 }
 
-.main-menu li.has-sub-menu a:after {
+.main-menu li .has-sub-menu a:after {
     content: '\f107';
     font-family: "FontAwesome";
     margin-left: 5px;
@@ -614,7 +614,7 @@ section.why-us {
 }
 .overlay1
 {
-  background-color:#495057af;
+  
   height: 800px; 
 }
 
@@ -745,7 +745,7 @@ section.why-us {
 /* Coming Soon */
 
 section.coming-soon {
-    background-image: url(../images/student11.jpg);
+    background-image: url(../images/jeswin.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
@@ -1839,6 +1839,7 @@ footer p a:hover {
                       .project-wrap {
                         margin-bottom: 30px;
                         width: 100%;
+                        height: 570px;
                         background: #fff;
                         -webkit-box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.11);
                         -moz-box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.11);
@@ -1935,3 +1936,101 @@ footer p a:hover {
                                     -webkit-box-pack: justify !important;
                                     -ms-flex-pack: justify !important;
                                     justify-content: space-between !important; }
+
+
+                                    .bgy{ 
+                                      background-color:#7DE38D;
+                                  }
+                                  
+                                  .bgw{ 
+                                      background-color:#6c757d;
+                                  }
+                                    
+                                  
+                                  .save h1{
+                                    font-size: 30px;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    font-weight: 300;
+                                    text-align: center;
+                                    margin-bottom: 15px;
+                                  }
+                                  
+                                  .save table{
+                                    width:100%;
+                                    table-layout: fixed;
+                                  }
+                                  .tbl-header{
+                                    background-color: rgba(255,255,255,0.3);
+                                   }
+                                  .tbl-content{
+                                    height:300px;
+                                    overflow-x:auto;
+                                    margin-top: 0px;
+                                    border: 1px solid rgba(255,255,255,0.3);
+                                  }
+                                  .save th{
+                                    padding: 20px 15px;
+                                    text-align: left;
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                  }
+                                  .save td{
+                                    padding: 15px;
+                                    text-align: left;
+                                    vertical-align:middle;
+                                    font-weight: 300;
+                                    font-size: 18px;
+                                    color: #fff;
+                                    border-bottom: solid 1px rgba(255,255,255,0.1);
+                                  }
+                                  
+                                  
+                                  /* demo styles */
+                                  
+                                  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+                                  
+                                  .save section{
+                                    margin: 50px;
+                                  }
+                                  
+                                  
+                                  /* follow me template */
+                                  .made-with-love {
+                                    margin-top: 40px;
+                                    padding: 10px;
+                                    clear: left;
+                                    text-align: center;
+                                    font-size: 10px;
+                                    font-family: arial;
+                                    color: #fff;
+                                  }
+                                  .made-with-love i {
+                                    font-style: normal;
+                                    color: #F50057;
+                                    font-size: 14px;
+                                    position: relative;
+                                    top: 2px;
+                                  }
+                                  .made-with-love a {
+                                    color: #fff;
+                                    text-decoration: none;
+                                  }
+                                  .made-with-love a:hover {
+                                    text-decoration: underline;
+                                  }
+                                  
+                                  
+                                  /* for custom scrollbar for webkit browser*/
+                                  
+                                  ::-webkit-scrollbar {
+                                      width: 6px;
+                                  } 
+                                  ::-webkit-scrollbar-track {
+                                      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+                                  } 
+                                  ::-webkit-scrollbar-thumb {
+                                      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+                                  }
