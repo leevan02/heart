@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use App\Models\Saved;
-use App\Models\Course;
+// use App\Models\Course;
 use App\Models\Applies;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

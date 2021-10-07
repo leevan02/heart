@@ -8,12 +8,12 @@ use App\Models\User;
 
 use App\Models\Saved;
 
-use App\models\Course;
 use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use App\Mail\ContactMailable;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
+use App\Models\Course;
 
 class HomeController extends Controller
 {
