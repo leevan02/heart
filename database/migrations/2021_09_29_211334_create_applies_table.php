@@ -16,6 +16,8 @@ class CreateAppliesTable extends Migration
         Schema::create('applies', function (Blueprint $table) {
             $table->id();
             $table->string('user_id')->nullable();
+            
+
             $table->string('pimage')->nullable();
 
 
@@ -47,6 +49,8 @@ class CreateAppliesTable extends Migration
             $table->string('expire')->nullable();
             $table->string('card_holder')->nullable();
             $table->string('cash')->nullable();
+            $table->string('status')->default('pending');
+
             $table->timestamps();
         });
     }

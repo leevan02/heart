@@ -23,7 +23,6 @@ class CreateCoursesTable extends Migration
             $table->string("status")->nullable();
             $table->string("certiDegree")->nullable();
             $table->string("price")->nullable();
-            $table->string('stripe_plan');
 
            $table->timestamps();
         });
