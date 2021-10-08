@@ -132,7 +132,7 @@ class SaveController extends Controller
             $dataz = Saved::where('id',$id)->get();
             // $course=Course::all();
             $user = Auth::user();
-             alert()->info('Already applied','check your my course.');
+            //  alert()->info('Already applied','check your my course.');
 
             return view('apply',compact('dataz'));
         // }
@@ -202,6 +202,10 @@ class SaveController extends Controller
    if($applied->save())
    {
        Mail::to($details['email'])->send(new ApplyMailable);
+
+    alert()->info('thanks for Applying','check your your email.');
+
+
    return redirect(url('/')) ->with('success', 'Thank for applying');
    }
    
