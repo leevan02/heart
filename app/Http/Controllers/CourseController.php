@@ -45,10 +45,10 @@ class CourseController extends Controller
    public function edit_application($id)
    {
       $application = Applies::find($id);
-      $course=Course::all();
+      // $course=Course::all();
 
 
-      return view('student.edit_application', compact('application','course'));
+      return view('student.edit_application', compact('application'));
       
    }
 
@@ -86,14 +86,14 @@ class CourseController extends Controller
   
          $applied->qualification=$qual_name;
        }
-          $course_id=$request->input('course_id');
+         //  $course_id=$request->input('course_id');
 
     
        
     
         
         $applied->user_id=$user;
-        $applied->course_id=$course_id;
+      //   $applied->course_id=$course_id;
       
         $applied->fname=$request->fname;
         $applied->lname=$request->lname;

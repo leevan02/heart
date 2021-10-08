@@ -30,7 +30,6 @@ class CreateAppliesTable extends Migration
             $table->string('course');
             
 
-            $table->string('class');
             $table->string('address')->nullable();
             $table->string('address2')->nullable();
             $table->string('address3')->nullable();
@@ -48,7 +47,6 @@ class CreateAppliesTable extends Migration
             $table->string('cvc')->nullable();
             $table->string('expire')->nullable();
             $table->string('card_holder')->nullable();
-            $table->string('cash')->nullable();
             $table->string('status')->default('pending');
 
             $table->timestamps();
