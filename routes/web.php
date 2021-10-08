@@ -34,7 +34,7 @@ route::get('/CheckRoute',[HomeController::class,'CheckRoute']);
 
 // //   admin routes
 
-route::get('/AdminHome',[AdminController::class,'index']);
+route::get('/adminHome',[AdminController::class,'index']);
 
 
 route::get('/student',[AdminController::class,'student']);

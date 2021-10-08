@@ -122,14 +122,14 @@
                         
 
                          <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
-                        <input type="radio" class="btn-check" name="gender" value="male"  id="female" autocomplete="off" required>
+                        <input type="radio" class="btn-check" name="gender" value="male"  id="male" autocomplete="off" required>
 
                         <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
-                         <input type="radio" class="btn-check" name="gender" value="female"  id="secret" autocomplete="off" required>
+                         <input type="radio" class="btn-check" name="gender" value="female"  id="female" autocomplete="off" required>
 
-                        <label class="btn btn-sm btn-outline-secondary" value="n/a" for="secret">Secret</label>
-                        <div class="valid-feedback mv-up">You selected a gender!</div>
-                              <div class="invalid-feedback mv-up">Please select a gender!</div>
+                        <label class="btn btn-sm btn-outline-secondary" value="other" for="other">other</label>
+                        <input type="radio" class="btn-check" name="gender" value="other"  id="other" autocomplete="off" required>
+
                      </div>
   
 

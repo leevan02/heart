@@ -40,7 +40,7 @@
                               @if (Auth()->user()->usertype=="1")
                                 
                              
-                                <li><a href="{{ url('AdminHome') }}">Dashboard</a></li>
+                                <li><a href="{{ url('adminHome') }}">Dashboard</a></li>
                                 @else
                                 <li><a href="{{  url('my_course',Auth::user()->id) }}">My Cousre</a></li>
                                        

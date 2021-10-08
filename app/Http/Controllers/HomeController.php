@@ -31,10 +31,10 @@ class HomeController extends Controller
 
     }
 
+    
    public function CheckRoute() 
     {
-        $datas=Course::all();
-        $user=User::all();
+        
 
          $usertype=Auth::User()->usertype;
 
@@ -43,7 +43,10 @@ class HomeController extends Controller
                return view('admin.adminHome');
            }
             else
+
              {
+                $datas=Course::all();
+                $user=User::all();
                 $user_id=Auth::id();
                 $count=Saved::where('user_id',$user_id)->count();
                  return view('home',compact('datas','user','count'));

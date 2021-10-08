@@ -25,7 +25,7 @@ class AdminController extends Controller
 
   function index() 
   {
-     $datas=Course::all(); 
+    //  $datas=Course::all(); 
      return view('admin.adminHome');
 
   }

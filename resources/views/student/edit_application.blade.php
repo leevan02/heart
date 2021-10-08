@@ -122,15 +122,23 @@
                       <label class="mb-3 mr-1" for="gender">Gender: </label>
                         
 
-                         <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
-                        <input type="radio" class="btn-check" name="gender" value="male"  id="female" autocomplete="off" >
+                         <label class="btn btn-sm btn-outline-secondary"
+                         
+                         for="male">Male</label>
+                        <input type="radio" class="btn-check" name="gender" 
+                        {{ $application->gender == 'male' ? 'checked' : '' }}
+                        value="male"  id="male" autocomplete="off" >
 
-                        <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
-                         <input type="radio" class="btn-check" name="gender" value="female"  id="secret" autocomplete="off" >
+                        <label class="btn btn-sm btn-outline-secondary" 
+                        {{ $application->gender == 'female' ? 'checked' : '' }}
+                        for="female">Female</label>
+                         <input type="radio" class="btn-check" name="gender" value="female"  id="female" autocomplete="off" >
 
-                        <label class="btn btn-sm btn-outline-secondary" value="n/a" for="secret">Secret</label>
-                        <div class="valid-feedback mv-up">You selected a gender!</div>
-                              <div class="invalid-feedback mv-up">Please select a gender!</div>
+                        <label class="btn btn-sm btn-outline-secondary" value="other" for="other">other</label>
+                        <input type="radio" class="btn-check" name="gender"
+                        {{ $application->gender == 'other' ? 'checked' : '' }}
+                        value="other"  id="other" autocomplete="off" >
+
                      </div>
   
 

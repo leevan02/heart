@@ -21,7 +21,7 @@
       <ul class="nav">
       
         <li class="nav-item">
-          <a class="nav-link" href="{{ url('/AdminHome') }}">
+          <a class="nav-link" href="{{ url('/adminHome') }}">
             <i class="mdi mdi-chart-pie menu-icon"></i>
             <span class="menu-title">Admin</span>
           </a>

@@ -18,11 +18,11 @@
         @foreach ( $course as $course)
        <div class="col-md-4 ftco-animate">
           <div class="project-wrap">
-             <a href="https://buy.stripe.com/test_fZe7w6aU8fvJfh6288" class="img" style="background-image: url(courseimage/{{ $course->image }});">
+             <a href="#" class="img" style="background-image: url(courseimage/{{ $course->image }});">
                 <span class="price">{{ $course->title }}</span>
             </a>
             <div class="text p-4">
-                <h3><a href="{{ url('/course',$course->id) }}">{{ $course->description }}</a></h3>
+                <h3><a href="#">{{ $course->description }}</a></h3>
                 <p class="">Advisor <span>{{ $course->teacher }}</span></p>
                 <p class="advisor">certi <span>{{ $course->certiDegree }}</span></p>
                 <ul class="d-flex justify-content-between">
