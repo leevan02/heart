@@ -34,7 +34,7 @@ class HomeController extends Controller
    public function CheckRoute() 
     {
         $datas=Course::all();
-        $user=user::all();
+        $user=User::all();
 
          $usertype=Auth::User()->usertype;
 

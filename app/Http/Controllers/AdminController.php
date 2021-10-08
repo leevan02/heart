@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\models\user;
 
-use App\models\Course;
+use App\Models\Course;
 
 use App\Models\Applies;
 use App\Mail\deniedMailable;
@@ -33,20 +33,20 @@ class AdminController extends Controller
 
   function teacher()
   {
-      $datas=user::all();
+      $datas=User::all();
     return view('admin.teacher',compact('datas'));
   }
 
 
    function student()
    {
-       $datas=user::all();
+       $datas=User::all();
      return view('admin.student',compact('datas'));
    }
 
    function delete($id)
    {
-       $user=user::find($id);
+       $user=User::find($id);
        $user->delete();
        return redirect()->back()->with('message','User have been deleted successfully');
    }
@@ -55,7 +55,7 @@ class AdminController extends Controller
 
    function course()
    {
-       $datas=course::all();
+       $datas=Course::all();
      return view('admin.course',compact('datas'));
    }
 
