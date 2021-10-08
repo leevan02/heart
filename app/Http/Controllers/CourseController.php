@@ -122,7 +122,7 @@ class CourseController extends Controller
     
     
         $applied->save();
-        return redirect(url('/my_course'))->with('message','Application edited successfully');
+        return view('/')->with('message','Application edited successfully');
 
    }
 
