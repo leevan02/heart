@@ -116,25 +116,26 @@ class SaveController extends Controller
    {
        
     $check=Applies::where('user_id',Auth::user()->id)
-            ->where('course_id',$id)
-            ->first();
-    if(isset($check->user_id) and isset($id))
-         {
-                    
-             alert()->info('Already applied','check your my course.');
-             return redirect()->back();
-             
-         
-         }
-           else
-         {
+            // ->where('course_id',$id)
+            // ->first()
+            ;
+    // if(isset($check->user_id) and isset($id))
+    //      {
+    //                 
+    //          return redirect()->back();
+    //          
+    //      
+    //      }
+    //        else
+    //      {
 
             $dataz = Saved::where('id',$id)->get();
-            $course=Course::all();
+            // $course=Course::all();
             $user = Auth::user();
+             alert()->info('Already applied','check your my course.');
 
-            return view('apply',compact('dataz','course'));
-        }
+            return view('apply',compact('dataz'));
+        // }
 }
 
 
@@ -144,7 +145,7 @@ class SaveController extends Controller
    {
 
     $user=Auth::id();
-  $course_id=$request->input('course_id');
+//   $course_id=$request->input('course_id');
 
     $this->validate($request ,['pimage'=>'required|mimes:png,jpg,jpeg|max:5048']);
      $this->validate($request ,['qualification'=>'required|file|max:5000|mimes:pdf,docx,doc']);
@@ -156,7 +157,7 @@ class SaveController extends Controller
 
     
     $applied->user_id=$user;
-    $applied->course_id=$course_id;
+    // $applied->course_id=$course_id;
     $image=$request->pimage;
     $image_name=time().'.'.$image->getClientOriginalExtension();  
     $request->pimage->move('applicantP', $image_name);

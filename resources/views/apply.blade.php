@@ -54,11 +54,11 @@
                 name="pimage" placeholder="Photo" required="" id="pimage" value="{{ old('pimage') }}" capture>
             </div>
       </div>
-      @foreach ($course as $course )
+      {{-- @foreach ($course as $course )
         
       
       <input type="hidden" name="course_id" value="{{ $course->id }}">
-@endforeach
+@endforeach --}}
       <div class="col-md-5 border-right">
           <div class="p-3 py-5">
               <div class="d-flex justify-content-between align-items-center mb-3">
